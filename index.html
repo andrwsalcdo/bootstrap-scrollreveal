@@ -65,7 +65,7 @@
     <div class="row">
       <div class="col-md-6 col-sm-6">
         <div class="info-left">
-          <img class="img responsive" src="img/image2.png" alt="several google homes">
+          <img src="img/image2.png" alt="several google homes">
         </div>
       </div>
       <div class="col-md-6 col-sm-6">
@@ -154,7 +154,39 @@
       delay: 2000,
       origin: 'bottom',
     });
-
+    sr.reveal('#testimonial div', {
+      duration: 2000,
+      origin: 'bottom',
+    });
+    sr.reveal('.info-left', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('.info-right', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+</script>
+<script>
+$(function() {
+  // Smooth Scrolling
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 </script>
 
 </body>
