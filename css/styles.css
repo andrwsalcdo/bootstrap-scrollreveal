@@ -34,3 +34,20 @@ p {
 #showcase .showcase-right {
   margin-top: 90px;
 }
+
+#testimonial {
+  background: #f1f1f1;
+  padding: 50px 0 30px 0;
+  margin-top: 40px;
+}
+
+#testimonial p {
+  font-size: 32px;
+  font-family: "Josefin sans";
+  color: #000;
+}
+
+#testimonial p.customer {
+  font-size: 20px;
+  color: #666; 
+}
