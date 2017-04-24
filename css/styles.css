@@ -1,3 +1,14 @@
+body {
+  margin-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins;
+}
+p {
+  font-family: Roboto;
+}
+
 .navbar-default {
   background: #fff;
   border: 0;
@@ -8,4 +19,18 @@
   font-size: 20px;
   color: #000 !important;
   font-weight: bold;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#showcase img {
+  width: 90%;
+  margin-left: 60px;
+}
+
+#showcase .showcase-right {
+  margin-top: 90px;
 }
